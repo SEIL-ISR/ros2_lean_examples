@@ -1,0 +1,19 @@
+.lake/
+build/
+install/
+log/
+*.olean
+*.ilean
+*.o
+*.a
+
+# Lake records dependency paths in the manifest, and under colcon those are
+# absolute paths into the install tree, so it is regenerated on every build.
+rcllean_examples/lake-manifest.json
+rcllean_mathlib_examples/lake-manifest.json
+
+# Interface packages built from source, cloned into deps/
+deps/
+
+# macOS Finder metadata
+.DS_Store
